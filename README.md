@@ -18,23 +18,23 @@
 
  - **Create an interface with IChatMediater**
 
-   ![image](https://github.com/jil1710/readmedemo/assets/125335932/cef09d23-b905-4cae-b37f-b8197f370853)
+   ![image](https://github.com/dotnet-simformsolutions/mediater-design-pattern/blob/master/images/273192359-cef09d23-b905-4cae-b37f-b8197f370853.png)
 
 
  - **The ChatMediator interface defines the contract for communication between objects. It declares the `SendMessage()`, `JoinGroup()` method for sending messages and joining group.The ChatRoom class is the concrete mediator that implements the `ChatMediator` interface. It maintains a list of users and broadcasts messages to all users except the sender.**
 
-   ![image](https://github.com/jil1710/readmedemo/assets/125335932/454b1b66-4a08-43e4-becb-f333170631a7)
-
+   ![image](https://github.com/dotnet-simformsolutions/mediater-design-pattern/blob/master/images/273192760-454b1b66-4a08-43e4-becb-f333170631a7.png)
+   
  - **The User interface represents the colleague interface. It declares the `SendMessage()` and `ReceiveMessage()` methods for sending and receiving messages. The ChatUser class is a concrete colleague that implements the User interface. It communicates through the mediator by invoking the `SendMessage()` method and receives messages through the `ReceiveMessage()` method.**
 
-   ![image](https://github.com/jil1710/readmedemo/assets/125335932/4fb20443-b50c-4908-92e7-a6be138f7da1)
+   ![image](https://github.com/dotnet-simformsolutions/mediater-design-pattern/blob/master/images/273193513-4fb20443-b50c-4908-92e7-a6be138f7da1.png)
 
-   ![image](https://github.com/jil1710/readmedemo/assets/125335932/2fbb05fa-9728-4867-9a34-b1c49af6999f)
+   ![image](https://github.com/dotnet-simformsolutions/mediater-design-pattern/blob/master/images/273193533-2fbb05fa-9728-4867-9a34-b1c49af6999f.png)
 
 
  - **Client code**
 
-   ![image](https://github.com/jil1710/readmedemo/assets/125335932/c602ffed-7bb0-4011-b572-140af99e8434)
+   ![image](https://github.com/dotnet-simformsolutions/mediater-design-pattern/blob/master/images/273193636-c602ffed-7bb0-4011-b572-140af99e8434.png)
 
 
 
